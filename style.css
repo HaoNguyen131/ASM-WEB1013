@@ -116,15 +116,15 @@
     }   
 
     .news-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 cột mỗi hàng */
         gap: 20px;
     }
-
+    
     .news-item {
         background-color: white;
         padding: 15px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        flex: 1;
         text-align: center;
     }
 

@@ -81,23 +81,6 @@
         color: #E94F1B;
     }
 
-    /* Phần giới thiệu */
-    main {
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 0 20px;
-    }
-
-    .intro {
-        background-color: white;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .intro h2 {
-        margin-top: 0;
-    }
-
     /* Bảng tin và Tin tức nổi bật */
     .news-section {
         display: flex;
@@ -251,7 +234,6 @@ footer {
 .footer-addresses {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -276,26 +258,58 @@ footer {
 }
 
 
-/* Sửa lỗi font-size thiếu đơn vị và thêm kiểu cho footer-social */
-.footer-social {
+/* Container chính cho Like & Share */
+.like-share-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Khoảng cách giữa các biểu tượng */
-    margin-top: 20px;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px; /* Độ rộng tối đa cho layout */
 }
 
-.social-icon {
-    color: #333; /* Màu mặc định của biểu tượng */
-    transition: color 0.3s, transform 0.3s; /* Hiệu ứng chuyển đổi mượt mà */
+/* Style cho các nút Like và Share */
+.like-button, .share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.social-icon:hover {
-    color: #E94F1B; /* Màu khi hover (có thể thay đổi theo ý muốn) */
-    transform: scale(1.2); /* Phóng to biểu tượng khi hover */
+.like-button:hover, .share-button:hover {
+    background-color: #e67e22; /* Màu khi hover */
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
 }
 
-/* Sửa lỗi font-size thiếu đơn vị */
-.fa-brands {
-    font-size: 50px; /* Thêm đơn vị px */
+/* Style cho biểu tượng trong các nút */
+.like-button i, .share-button i {
+    font-size: 20px;
 }
+
+/* Phần các icon chia sẻ */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #E94F1B; /* Màu đỏ khi hover */
+    transform: scale(1.2); /* Phóng to nhẹ khi hover */
+}
+
 

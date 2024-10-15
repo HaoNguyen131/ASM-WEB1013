@@ -1,5 +1,190 @@
-img{
+ /* Tổng quát */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Thanh navigation */
+nav {
+    background-color: orange;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: yellow;
+    border-radius: 4px;
+}
+
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    padding: 0;
+}
+
+.dropdown-content li {
+    display: block;
+    margin: 0;
+}
+
+.dropdown-content li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f4f4f4;
+    color: #E94F1B;
+}
+
+.img2{
     padding: 50px;
     margin: auto;
     display: flex;
 }
+
+
+ /* Footer */
+ footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+    border-top: 2px solid orange;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-addresses {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-address {
+    flex-basis: 19%; /* Chiều rộng cho mỗi cột */
+    text-align: left;
+}
+
+.footer-address h4 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.footer-address p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-address a {
+    color: #E94F1B;
+    text-decoration: none;
+}
+
+
+/* Container chính cho Like & Share */
+.like-share-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px; /* Độ rộng tối đa cho layout */
+}
+
+/* Style cho các nút Like và Share */
+.like-button, .share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.like-button:hover, .share-button:hover {
+    background-color: #e67e22; /* Màu khi hover */
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+/* Style cho biểu tượng trong các nút */
+.like-button i, .share-button i {
+    font-size: 20px;
+}
+
+/* Phần các icon chia sẻ */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #E94F1B; /* Màu đỏ khi hover */
+    transform: scale(1.2); /* Phóng to nhẹ khi hover */
+}
+

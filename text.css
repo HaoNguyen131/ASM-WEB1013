@@ -1,0 +1,55 @@
+/* Container chính cho Like & Share */
+.like-share-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px; /* Độ rộng tối đa cho layout */
+}
+
+/* Style cho các nút Like và Share */
+.like-button, .share-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.like-button:hover, .share-button:hover {
+    background-color: #e67e22; /* Màu khi hover */
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+/* Style cho biểu tượng trong các nút */
+.like-button i, .share-button i {
+    font-size: 20px;
+}
+
+/* Phần các icon chia sẻ */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #E94F1B; /* Màu đỏ khi hover */
+    transform: scale(1.2); /* Phóng to nhẹ khi hover */
+}

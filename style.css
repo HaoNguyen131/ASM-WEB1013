@@ -275,6 +275,7 @@ footer {
     text-decoration: none;
 }
 
+
 /* Sửa lỗi font-size thiếu đơn vị và thêm kiểu cho footer-social */
 .footer-social {
     display: flex;

@@ -128,15 +128,6 @@ textarea {
 #button2:hover {
     background-color: orange;
 }
-
-
-input:focus, textarea:focus, select:focus {
-    background-color: #FFF3E0 !important; /* Đổi màu nền khi focus */
-    outline: none !important; /* Xóa bỏ viền mặc định */
-    border-color: #FFB74D !important; /* Đổi màu viền */
-}
-
-
  /* Footer */
  footer {
     background-color: #f4f4f4;

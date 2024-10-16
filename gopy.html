@@ -38,22 +38,28 @@
     </nav>
 </header>
     <div class="container">
-        <h2>Liên hệ với chúng tôi</h2>
-            <form>
-                <label for="name">Họ và Tên:</label>
-                <input type="text" id="name" placeholder="Nhập họ và tên" required>
+        <h1>Góp Ý về Trường</h1>
+        <form action="#" method="POST">
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Nhập địa chỉ email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email của bạn" required>
 
-                <label for="phone">Số điện thoại:</label>
-                <input type="tel" id="phone" placeholder="Nhập số điện thoại" required>
+            <label for="subject">Chủ đề góp ý</label>
+            <select id="subject" name="subject" required>
+                <option value="">Chọn chủ đề</option>
+                <option value="Cơ sở vật chất">Cơ sở vật chất</option>
+                <option value="Chương trình giảng dạy">Chương trình giảng dạy</option>
+                <option value="Giáo viên và nhân viên">Giáo viên và nhân viên</option>
+                <option value="Hoạt động ngoại khóa">Hoạt động ngoại khóa</option>
+                <option value="Khác">Khác</option>
+            </select>
 
-                <label for="message">Lời nhắn:</label>
-                <textarea id="message" placeholder="Nhập nội dung cần gửi"></textarea>
+            <label for="feedback">Nội dung góp ý</label>
+            <textarea id="feedback" name="feedback" rows="6" placeholder="Nhập góp ý của bạn" required></textarea>
 
-                <button id="button2" type="submit">Gửi liên hệ</button>
-            </form>
+            <button id="button2" type="submit">Gửi Góp Ý</button>
         </form>
     </div>
     <footer>
